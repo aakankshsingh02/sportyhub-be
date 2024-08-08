@@ -65,7 +65,7 @@ router.post("/forgot-password", async (req, res) => {
       },
     });
 
-    const resetUrl = `http://${req.headers.host}/reset-password/${resetToken}`;
+    const resetUrl = `http://https://sportyhub-fe.vercel.app/reset-password/${resetToken}`;
 
     await transporter.sendMail({
       to: user.email,
